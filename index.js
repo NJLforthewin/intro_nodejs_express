@@ -8,7 +8,7 @@ app.use(express.json());
 
 app.get('/items', (req, res) => {
     res.json(items);
-})
+});
 
 app.post('/items',(req, res) => {
     const newItem = req.body.item;
